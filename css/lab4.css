@@ -23,25 +23,58 @@ h1{
     
 }
 .entry{
-    float:right;
+    float:inherit;
+    position:absolute;
     height: 600px;
     background-color: #f5f5f5;
     width: 200px;
     margin-right:5%;
     margin-left: 20em;
+    border-bottom: 1px #ff8800 solid;
 
 }
 
 .writeup{
     float: left; 
-    width:15%;
+    width:20%;
     height:600px;
     margin-left: 5em;
-    padding-right: 5em;
+    padding-right: 2em;
     background-color: #f5f5f5;
 }
 
-.footer-related{
-    position: relative;
+.footer-section{
+    position: fixed;
+    bottom:20px;
+    background-color: #474747;
 
+}
+.footer-related{
+    clear:none;
+    position: fixed;
+    background-color: #474747;
+    bottom: 20px;
+
+}
+.overlay{
+    position:absolute;
+    top:40px;
+}
+.linkbutton{
+    background-color: #ff8800;
+    padding:1em;
+    color: #f5f5f5;
+}
+figure{
+    position: relative;
+}
+
+
+
+
+a:visited{
+    text-decoration: none;
+}
+a:link{
+    text-decoration: none;
 }
