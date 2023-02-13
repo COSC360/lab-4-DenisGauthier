@@ -23,18 +23,21 @@ h1{
     
 }
 .entry{
-    float:inherit;
-    position:absolute;
+    float:ce;
+    position:relative;
     height: 600px;
     background-color: #f5f5f5;
     width: 200px;
-    margin-right:5%;
     margin-left: 20em;
-    border-bottom: 1px #ff8800 solid;
+    top:17%;
+    border-top: 1px #ff8800 solid;
     overflow-wrap: normal;
 
 }
-
+p.entry{
+    float:right;
+    
+}
 .writeup{
     float: left; 
     width:20%;
@@ -47,32 +50,44 @@ h1{
 .footer-section{
     position: fixed;
     bottom:20px;
-    background-color: #474747;
+    background: #474747;
 
 }
 .footer-related{
-    clear:none;
-    position: fixed;
+    position:inherit;
     background-color: #474747;
     bottom: 20px;
+    border-top: 1px #ff8800 solid;
+    color:lightslategray
 
 }
+
+p.footer-section{
+    background-color: #474747;
+    color:#f5f5f5;
+}
 .overlay{
-    position:absolute;
+    position:fixed;
     top:40px;
 }
+
+
+figure{
+    position: relative;
+}
+figcaption{
+    background: black;
+    opacity: .5;
+    color:white;
+}
+
+
 .linkbutton{
     background-color: #ff8800;
     padding:1em;
     color: #f5f5f5;
+    float:right;
 }
-figure{
-    position: relative;
-}
-
-
-
-
 a:visited{
     text-decoration: none;
 }
