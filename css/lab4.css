@@ -1,77 +1,38 @@
 head,footer,body{
     font-family: Tahoma, Helvetica, sans-serif;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
-h1{
+#masthead{
+    height:45px;
+    margin-left:5em;
+    margin-top:2em;
+    margin-right: 5em;
+    margin-bottom:2em;
     font-size: 1.8em;
+    overflow:none;
+}
+.travelTitle{
+    font-size: 1.8em;
+    background-color:#f5f5f5de;
+    margin-left: 5em;
+    margin-right:5em;
+
 }
 h2{
     font-size: 1.2em;
 }
 p,body{
     font-size: 0.9em;
-    background-color: #f5f5f5;
 }
-h1{
-    height:45px;
-    margin-left: 5em;
-    margin-right: 5em;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    background-color: #f5f5f5;
-    font-size: 1.8em;
-    
-}
+
 .entry{
-    float:ce;
-    position:relative;
-    height: 600px;
     background-color: #f5f5f5;
-    width: 200px;
-    margin-left: 20em;
-    top:17%;
     border-top: 1px #ff8800 solid;
-    overflow-wrap: normal;
-
+    overflow:auto;
+    margin-right:5em;
+    margin-left:20em;
+    margin-top:2em;
 }
-p.entry{
-    float:right;
-    
-}
-.writeup{
-    float: left; 
-    width:20%;
-    height:600px;
-    margin-left: 5em;
-    padding-right: 2em;
-    background-color: #f5f5f5;
-}
-
-.footer-section{
-    position: fixed;
-    bottom:20px;
-    background: #474747;
-
-}
-.footer-related{
-    position:inherit;
-    background-color: #474747;
-    bottom: 20px;
-    border-top: 1px #ff8800 solid;
-    color:lightslategray
-
-}
-
-p.footer-section{
-    background-color: #474747;
-    color:#f5f5f5;
-}
-.overlay{
-    position:fixed;
-    top:40px;
-}
-
-
 figure{
     position: relative;
 }
@@ -79,12 +40,21 @@ figcaption{
     background: black;
     opacity: .5;
     color:white;
+    position: absolute;
+    width:150px;
+}
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
 }
 
-
 .linkbutton{
+    display:block;
     background-color: #ff8800;
     padding:1em;
+    margin-right:2em;
+    margin-top:2em;
     color: #f5f5f5;
     float:right;
 }
@@ -93,4 +63,32 @@ a:visited{
 }
 a:link{
     text-decoration: none;
+}
+
+#right-sidebar{
+    float: left; 
+    width:15%;
+    height:600px;
+    margin-left: 5em;
+    margin-right:3em;
+    background-color: #f5f5f5;
+}
+
+footer{
+    background-color: #474747;
+}
+
+.footer-section{
+    background: #474747;
+    color:white;
+}
+.footer-related{
+    position:inherit;
+    background-color: #474747;
+    border-top: 1px #ff8800 solid;
+    color:lightslategray;
+}
+
+#center{
+    height: 600px;
 }
