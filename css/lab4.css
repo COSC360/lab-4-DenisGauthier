@@ -17,13 +17,9 @@ head,footer,body{
     background-color:#f5f5f5;
 }
 
-.travelTitle{
+#center h1{
     font-size: 1.8em;
     background-color:#f5f5f5de;
-    margin-left: 5em;
-    margin-right:5em;
-    margin-top:2em;
-
 }
 h2{
     font-size: 1.2em;
@@ -36,8 +32,9 @@ p,body{
     height: 600px;
     margin-right:5em;
     margin-bottom: 2em;
-    margin-left:2em;
+    margin-left:20em;
     padding:0.5em;
+    overflow:auto;
 }
 
 .entry{
@@ -46,7 +43,7 @@ p,body{
     overflow:auto;
     overflow-wrap:auto;
     margin-right:5em;
-    margin-left:20em;
+    margin-left:2em;
     margin-top:2em;
     margin-bottom: 2em;
 }
@@ -54,17 +51,10 @@ p,body{
 figure{
     /* This should work*/
     position: relative;
-}
-.overlay{
-    /* this image wont move*/
-    position:absolute;
-    top:0;
-    left:0;
-    z-index: 1;
+    float:left;
 }
 
 figcaption{
-    display:block;
     background: black;
     opacity: .75;
     color:white;
@@ -73,7 +63,11 @@ figcaption{
     top:133px;
     z-index: 2;
 }
-
+.overlayed{
+    position:absolute;
+    top:0;
+    left:0;
+}
 
 .linkbutton{
     display:block;
@@ -103,19 +97,22 @@ a:link{
 
 footer{
     background-color: #474747;
-    left:0%;
-    position:relative;
     width:100%;
     margin-top:2em;
+    display:flex;
 }
 
 .footer-section{
     background: #474747;
-    color:white;    
+    color:white;  
+    display:block;  
+    padding:0.5em;
 }
 
 .footer-related{
     background-color: #474747;
     border-top: 1px #ff8800 solid;
-    color:lightslategray;
+    float:left;
+    display:block;
+    
 }
