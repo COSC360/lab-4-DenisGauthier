@@ -1,7 +1,12 @@
+html, body{
+    height:100%
+}
+
 head,footer,body{
     font-family: Tahoma, Helvetica, sans-serif;
     background-color: rgb(255, 255, 255);
 }
+
 #masthead{
     height:45px;
     margin-left:5em;
@@ -9,13 +14,15 @@ head,footer,body{
     margin-right: 5em;
     margin-bottom:2em;
     font-size: 1.8em;
-    overflow:none;
+    background-color:#f5f5f5;
 }
+
 .travelTitle{
     font-size: 1.8em;
     background-color:#f5f5f5de;
     margin-left: 5em;
     margin-right:5em;
+    margin-top:2em;
 
 }
 h2{
@@ -25,39 +32,58 @@ p,body{
     font-size: 0.9em;
 }
 
+#center{
+    height: 600px;
+    margin-right:5em;
+    margin-bottom: 2em;
+    margin-left:2em;
+    padding:0.5em;
+}
+
 .entry{
     background-color: #f5f5f5;
     border-top: 1px #ff8800 solid;
     overflow:auto;
+    overflow-wrap:auto;
     margin-right:5em;
     margin-left:20em;
     margin-top:2em;
+    margin-bottom: 2em;
 }
+
 figure{
+    /* This should work*/
     position: relative;
 }
-figcaption{
-    background: black;
-    opacity: .5;
-    color:white;
-    position: absolute;
-    width:150px;
-}
 .overlay{
+    /* this image wont move*/
     position:absolute;
     top:0;
     left:0;
+    z-index: 1;
 }
+
+figcaption{
+    display:block;
+    background: black;
+    opacity: .75;
+    color:white;
+    position: absolute;
+    width:150px;
+    top:133px;
+    z-index: 2;
+}
+
 
 .linkbutton{
     display:block;
     background-color: #ff8800;
     padding:1em;
     margin-right:2em;
-    margin-top:2em;
     color: #f5f5f5;
     float:right;
 }
+
 a:visited{
     text-decoration: none;
 }
@@ -67,28 +93,29 @@ a:link{
 
 #right-sidebar{
     float: left; 
-    width:15%;
+    width:10%;
     height:600px;
     margin-left: 5em;
     margin-right:3em;
+    margin-top: 2em;
     background-color: #f5f5f5;
 }
 
 footer{
     background-color: #474747;
+    left:0%;
+    position:relative;
+    width:100%;
+    margin-top:2em;
 }
 
 .footer-section{
     background: #474747;
-    color:white;
+    color:white;    
 }
+
 .footer-related{
-    position:inherit;
     background-color: #474747;
     border-top: 1px #ff8800 solid;
     color:lightslategray;
-}
-
-#center{
-    height: 600px;
 }
